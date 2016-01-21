@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<struts>
+	<action name="login" class="pro.myStruts.action.LoginAction" method="login">
+		<result name="success">findAllNews</result>
+		<result name="failed">error.jsp</result>
+	</action>
+	
+	<action name="findAllNews" class="pro.myStruts.action.NewsAction" method="findAllNews">
+		<result name="success">welcome.jsp</result>
+	</action>
+	
+	<action name="exit" class="pro.myStruts.action.LoginAction" method="exit">
+		<result name="success">login.jsp</result>
+	</action>
+</struts>
